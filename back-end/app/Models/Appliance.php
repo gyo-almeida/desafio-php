@@ -14,6 +14,7 @@ class Appliance extends Model
         'name',
         'description',
         'voltage',
-        'brand'
+        'brand',
+        'url'
     ];
 }

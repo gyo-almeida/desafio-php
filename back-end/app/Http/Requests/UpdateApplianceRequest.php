@@ -22,10 +22,20 @@ class UpdateApplianceRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'name'=>'max:120',
-            'description'=>'max:255',
-            'voltage'=>'max:5',
-            'brand'=>'max:10'
+            'name'=>['sometimes', 'max:120'],
+            'description'=>['sometimes', 'max:255'],
+            'voltage'=>['sometimes', 'max:5'],
+            'brand'=>['sometimes', 'max:10'],
+            'url'=>['sometimes', 'url', 'max:500']
+        ];
+    }
+
+    public function messages()
+    {
+        return [
+            'description.max' => 'o campo description deve conter no máximo 255 caracteres',
+            'url.url'=> 'campo url deve ser uma URL válida',
+            'url.max'=> 'campo url deve conter até 500 caracteres'
         ];
     }
 }

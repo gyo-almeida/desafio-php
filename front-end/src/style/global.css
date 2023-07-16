@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root{
+    --color-background: #F3F3F3;
+    --color-brand-1: #c0c0c0;
+    --color-brand-2: #191970;
+
+    --black: #000;
+    --white: #FFF;
+
+    --radius-1: 4px;
+    --radius-2: 8px;
+
+    --font-sm: 0.75rem;
+    --font-md: 0.875rem;
+    --font-bg: 1.25rem;
+}
+
+body {
+  background-color: var(--color-background);
+}
+
+p {
+  cursor: default;
+}
+
+span {
+  cursor: default;
+  transition: 0.2 opacity;
+
+}
+
+span:hover {
+  opacity: 0.8;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+
+

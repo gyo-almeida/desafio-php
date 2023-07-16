@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('description');
             $table->string('voltage');
             $table->enum('brand', ['Electrolux', 'Brastemp', 'Fischer', 'Samsung', 'LG']);
-
+            $table->string('url', 500);
         });
     }
 
