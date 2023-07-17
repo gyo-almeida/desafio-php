@@ -28,67 +28,67 @@ $ docker-compose up
 # Rotas disponiveis
 URL: http://localhost:8080/api/appliance/
 
-Method: GET
+```Method: GET
 Request Body: {}
 Return: {}
-Code: 200
+Code: 200```
 
-Method: GET
+```Method: GET
 Base: URL/{id}
 Request Body: {}
 Return: {
-  "id": ""
-	"name": ""
-	"description": "",
-	"brand": "",
-	"url": "",
+ "id": ""
+ "name": ""
+ "description": "",
+ "brand": "",
+ "url": "",
  "created_at": "",
  "updated_at": ""
 }
-Code: 200
+Code: 200```
 
-Method: POST
+```Method: POST
 Request Body: {
-	"name": ""
-	"description": "",
-	"brand": "",
-	"url": ""
+ "name": ""
+ "description": "",
+ "brand": "",
+ "url": ""
 }
 Return: {
-  "id": ""
-	"name": ""
-	"description": "",
-	"brand": "",
-	"url": "",
+ "id": ""
+ "name": ""
+ "description": "",
+ "brand": "",
+ "url": "",
  "created_at": "",
  "updated_at": ""
 }
-Code: 201
+Code: 201```
 
-Method: PATCH
+```Method: PATCH
 Base: URL/{id}
 Body: {
-	"name": ""
-	"description": "",
-	"brand": "",
-	"url": ""
+ "name": ""
+ "description": "",
+ "brand": "",
+ "url": ""
 }
 Return: {
-  "id": ""
-	"name": ""
-	"description": "",
-	"brand": "",
-	"url": "",
+ "id": ""
+ "name": ""
+ "description": "",
+ "brand": "",
+ "url": "",
  "created_at": "",
  "updated_at": ""
 }
-Code: 200
+Code: 200```
 
-Method: DELETE
+```Method: DELETE
 Base: URL/{id}
 Request Body: {}
 Return: {}
-Code: 204
+Code: 204```
 
 # Configurando a Pasta Front-End
 
