@@ -22,6 +22,11 @@
             <label for="voltage">Voltagem</label>
             <input type="text" id="voltage" v-model="form.voltage" />
           </div>
+
+          <div>
+            <label for="url">URL</label>
+            <input type="text" id="url" v-model="form.url" />
+          </div>
   
           <div>
             <label for="brand">Marca</label>
@@ -55,6 +60,7 @@
           description: null,
           brand: null,
           voltage: null,
+          url: null
         },
       };
     },
@@ -164,6 +170,11 @@
     gap: 5px;
   }
   
+  label {
+    font-size: var(--font-sm);
+    font-weight: bolder;
+  }
+
   input, select {
     width: 96%;
     border: solid 1px var(--color-brand-1);
